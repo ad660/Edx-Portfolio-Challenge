@@ -47,7 +47,7 @@ p {
     'nav contact about-me'
     'footer footer footer';
   grid-template-columns: 0.65fr 3fr 4fr;
-  grid-template-rows: 1.5fr 2fr 1.5fr;
+  grid-template-rows: 1fr 2fr 1.5fr;
 }
 
 
@@ -143,21 +143,38 @@ nav ul li:nth-child(n+2):hover{
   grid-area: profile;
 }
 
-.container {
-  display: grid;
-}
-
-.flex-img-3 {
-  display: flex;
+.container-header {
+  display: flex;  
   flex-direction: row; 
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  
+  gap: 10px;
 }
 
-.img-responsive {
+.container-header img:first-child {
+  width: 32%;
+  height: auto;
+} 
+
+.container-header img:nth-child(2) {
+  width: 33%;
+  height: auto;
+} 
+
+.container-header img:nth-child(3) {
+  width: 32%;
+  height: auto;
+} 
+
+/* .img-responsive {
   margin: 2.5px;
   border: 5px solid black;
-}
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+} */
 
 
 /* Work example section */
@@ -173,6 +190,9 @@ nav ul li:nth-child(n+2):hover{
   color: var(--white);
 }
 
+.container {
+  display: grid;
+}
 
 .github-flex {
   display: flex;
@@ -210,7 +230,7 @@ nav ul li:nth-child(n+2):hover{
   background-color: rgba(168, 158, 158, 0.295);
   border-radius: 8px;
   padding: 8px 0;
-  transition: var(--transition) ;
+  transition: var(--transition);
 }
 
 .decoration:active {
