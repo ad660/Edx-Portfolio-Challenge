@@ -149,8 +149,11 @@ nav ul li:nth-child(n+2):hover{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  
   gap: 10px;
+}
+
+.container-header img {
+  border: 5px solid black;
 }
 
 .container-header img:first-child {
